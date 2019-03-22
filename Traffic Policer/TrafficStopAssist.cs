@@ -175,10 +175,6 @@ namespace Traffic_Policer
                             
 
                         }
-                        if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                        {
-                            API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Custom pullover locations set");
-                        }
                         Game.LogTrivial("Done custom pullover location");
                         if (stoppedCar.Exists())
                         {
@@ -281,10 +277,6 @@ namespace Traffic_Policer
                     //Game.LogTrivial("Vehicle Length: " + stoppedCar.Length.ToString());
                     bool CanBoost = true;
                     int CheckPoint = 0;
-                    if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                    {
-                        API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Vehicles Mimicked");
-                    }
                     //Driving loop
                     while (true)
                     {
@@ -502,10 +494,6 @@ namespace Traffic_Policer
                         }
                         
 
-                    }
-                    if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                    {
-                        API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Vehicles made to follow you");
                     }
                     Game.DisplayNotification("The ~r~" + modelName + "~s~ is no longer following you.");
                     Game.LogTrivial("Done following");

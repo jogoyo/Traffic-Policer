@@ -69,13 +69,7 @@ namespace Traffic_Policer.Ambientevents
                 }
 
             }
-            else
-            {
-                if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                {
-                    API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Traffic ambient event vehicles pulled over");
-                }
-            }
+            
             TrafficPolicerHandler.AmbientEventGameFibersToAbort.Add(DrivingStyleFiber);
             TrafficPolicerHandler.AmbientEventGameFibersToAbort.Add(AmbientEventMainFiber);
             Game.LogTrivial("Added ambient event fibers to cleanup");

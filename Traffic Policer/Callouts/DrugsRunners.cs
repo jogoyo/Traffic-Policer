@@ -310,10 +310,6 @@ namespace Traffic_Policer.Callouts
                             drugs1Found = true;
                             Game.DisplayNotification("You found a quantity of ~r~drugs.");
                             Game.DisplayNotification("When you're done, ~b~hold down " + TrafficPolicerHandler.courtKey + "~s~ to present evidence to ~b~court.");
-                            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                            {
-                                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Drugs Runners - Pieces of evidence found");
-                            }
                         }
                     }
 
@@ -326,10 +322,6 @@ namespace Traffic_Policer.Callouts
                             drugs2Found = true;
                             Game.DisplayNotification("You found a quantity of ~r~drugs.");
                             Game.DisplayNotification("When you're done, ~b~hold down " + TrafficPolicerHandler.courtKey + "~s~ to present evidence to ~b~court.");
-                            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                            {
-                                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Drugs Runners - Pieces of evidence found");
-                            }
                         }
                     }
                     if (drugs3.Exists())
@@ -341,10 +333,6 @@ namespace Traffic_Policer.Callouts
                             drugs3Found = true;
                             Game.DisplayNotification("You found a quantity of ~r~drugs.");
                             Game.DisplayNotification("When you're done, ~b~hold down " + TrafficPolicerHandler.courtKey + "~s~ to present evidence to ~b~court.");
-                            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                            {
-                                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Drugs Runners - Pieces of evidence found");
-                            }
                         }
                     }
                     if (drugs4.Exists())
@@ -356,10 +344,6 @@ namespace Traffic_Policer.Callouts
                             drugs4Found = true;
                             Game.DisplayNotification("You found a quantity of ~r~drugs.");
                             Game.DisplayNotification("When you're done, ~b~hold down " + TrafficPolicerHandler.courtKey + "~s~ to present evidence to ~b~court.");
-                            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                            {
-                                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Drugs Runners - Pieces of evidence found");
-                            }
                         }
                     }
                     if (drugs5.Exists())
@@ -371,10 +355,6 @@ namespace Traffic_Policer.Callouts
                             drugs5Found = true;
                             Game.DisplayNotification("You found a quantity of ~r~drugs.");
                             Game.DisplayNotification("When you're done, ~b~hold down " + TrafficPolicerHandler.courtKey + "~s~ to present evidence to ~b~court.");
-                            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                            {
-                                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Drugs Runners - Pieces of evidence found");
-                            }
                         }
                     }
                     if (money.Exists())
@@ -386,10 +366,6 @@ namespace Traffic_Policer.Callouts
                             moneyFound = true;
                             Game.DisplayNotification("You found a large amount of ~r~cash.");
                             Game.DisplayNotification("When you're done, ~b~hold down " + TrafficPolicerHandler.courtKey + "~s~ to present evidence to ~b~court.");
-                            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-                            {
-                                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Drugs Runners - Pieces of evidence found");
-                            }
                         }
                     }
                 }

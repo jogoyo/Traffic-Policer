@@ -91,11 +91,6 @@ namespace Traffic_Policer
             Game.DisplayNotification("~g~Traffic Officer ~b~" + TrafficPolicerHandler.DivisionUnitBeat + " ~s~is reporting an ~r~illegally parked vehicle.");
             Game.DisplayNotification("~b~Processing a parking ticket for " + article + " ~r~" + modelName + "~b~ with licence plate: ~r~" + licencePlateNotificationMessage + ".");
             Game.DisplayNotification("~b~The offending ~r~" + modelName + " ~b~is parked on ~o~" + World.GetStreetName(car.Position) + ".");
-            if (TrafficPolicerHandler.IsLSPDFRPlusRunning)
-            {
-                API.LSPDFRPlusFunctions.AddCountToStatistic(Main.PluginName, "Parking tickets issued");
-            }
-
 
             playerPed.Inventory.GiveNewWeapon(new WeaponAsset("WEAPON_UNARMED"), 0, true);
             Rage.Object notepad = new Rage.Object("prop_notepad_02", playerPed.Position);

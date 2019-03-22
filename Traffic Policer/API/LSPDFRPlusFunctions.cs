@@ -26,11 +26,6 @@ namespace Traffic_Policer.API
             return LSPDFR_.API.Functions.DeterminePrisonSentence(MinMonths, MaxMonths, SuspendedChance);
         }
 
-        public static void AddCountToStatistic(string PluginName, string Statistic)
-        {
-            LSPDFR_.API.ProtectedFunctions.AddCountToStatistic(PluginName, Statistic);
-        }
-
         public static void AddQuestionToTrafficStop(Ped suspect, string Question, string Answer)
         {
             LSPDFR_.API.Functions.AddQuestionToTrafficStop(suspect, Question, Answer);
